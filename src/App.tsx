@@ -6,12 +6,16 @@ const App: React.FC = () => (
   <ConfigProvider
     theme={{
       token: {
-        colorPrimary: "70B942",
+        colorPrimary: "#B3E5FC",
         borderRadius: 4,
         fontFamily:
           "Maven Pro, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue'",
       },
-      // algorithm: theme.darkAlgorithm,
+      components: {
+        // Divider: {
+        //   verticalMarginInline: 0,
+        // },
+      },
     }}
   >
     <WebsiteLayout></WebsiteLayout>

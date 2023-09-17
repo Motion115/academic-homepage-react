@@ -15,11 +15,16 @@ import colorProjection from "../constanats/constants";
 import "../constanats/constants";
 const { Text } = Typography;
 
-interface PubEntrySpec {
+interface projectEntrySpec {
   paperTitle: string;
-  authors: JSX.Element;
-  venueType: "Conference" | "Journal" | "Workshop" | "arXiv" | "underReview" | "Other";
-  venueShort: string;
+  role:
+    | "Project Leader"
+    | "Member"
+    | "Contributor"
+    | "Main Contributor"
+    | "Independent Work";
+  venueType: "Competition" | "Course" | "Other";
+  duration: string;
   venueFull: string;
   awardName?: string;
   paperLink?: string;
@@ -30,17 +35,17 @@ interface PubEntrySpec {
   materialLink?: string;
 }
 
-const PubEntry: React.FC<PubEntrySpec> = (props: PubEntrySpec) => (
+const projectEntry: React.FC<projectEntrySpec> = (props: projectEntrySpec) => (
   <Space>
     <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
       <Col className="gutter-row" span={24}>
         <Text strong={true}>{props.paperTitle}</Text>
         <br />
-        <Text>{props.authors}</Text>
+        <Text>{props.role}</Text>
         <br />
         <Tag color={colorProjection[props.venueType]}>
           <i>
-            <b>{props.venueShort}</b>
+            <b>{props.duration}</b>
           </i>
         </Tag>
         <Text italic={true}>{props.venueFull}</Text>
@@ -91,4 +96,4 @@ const PubEntry: React.FC<PubEntrySpec> = (props: PubEntrySpec) => (
   </Space>
 );
 
-export default PubEntry;
+export default projectEntry;

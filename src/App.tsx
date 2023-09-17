@@ -1,6 +1,6 @@
 import React from "react";
 import { Button, ConfigProvider, Layout, Space, theme } from "antd";
-import PageStructure from "./layout";
+import WebsiteLayout from "./layout";
 
 const App: React.FC = () => (
   <ConfigProvider
@@ -8,12 +8,13 @@ const App: React.FC = () => (
       token: {
         colorPrimary: "70B942",
         borderRadius: 4,
+        fontFamily:
+          "Maven Pro, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue'",
       },
-
-      //algorithm: theme.darkAlgorithm,
+      // algorithm: theme.darkAlgorithm,
     }}
   >
-      <PageStructure></PageStructure>
+    <WebsiteLayout></WebsiteLayout>
   </ConfigProvider>
 );
 

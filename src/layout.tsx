@@ -1,18 +1,16 @@
-import { LikeOutlined, MessageOutlined, StarOutlined } from '@ant-design/icons';
-import React from 'react';
-import { Avatar, Layout, List, Space } from 'antd';
+import { LikeOutlined, MessageOutlined, StarOutlined } from "@ant-design/icons";
+import React from "react";
+import { Avatar, Layout, List, Space, Typography } from "antd";
 
-import PubList from './modules/pub_entry'
-import PubSpec from './modules/pub_entry_spec'
+import PubList from "./modules/pub_list";
+const { Paragraph } = Typography;
 
 
 const App: React.FC = () => (
-  <Layout style={{ width: "60%", margin: "auto" }}>
+  <Layout style={{ width: "70%", margin: "auto", backgroundColor: "#ffffff" }}>
+
     <Space>
       <PubList></PubList>
-    </Space>
-    <Space>
-      <PubSpec></PubSpec>
     </Space>
   </Layout>
 );

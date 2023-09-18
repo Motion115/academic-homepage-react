@@ -5,47 +5,22 @@ import PubEntry from "./group_items/pub_entry_spec";
 import colorProjection from "./constanats/constants";
 const { Text } = Typography;
 
-const publicationList = [
-  <PubEntry
-    paperTitle="iTutor: A Generative Tutorial System for Teaching the Elders to Use
-          Smartphone Applications"
-    authors={
-      <>
-        <b>Ruishi Zou</b>, Zi Ye, Chen Ye
-      </>
-    }
-    venueType="Conference"
-    venueShort="UIST'23 EA"
-    venueFull="Proceedings of the 36th Annual ACM Symposium on User Interface Software and Technology"
-    paperLink=""
-    exploreLink="https://motion115.github.io/iTutor"
-    codeLink="https://github.com/Motion115/iTutor"
-  />,
-  <PubEntry
-    paperTitle="Chart2Vec: A Universal Embedding of Context-Aware Visualizations"
-    authors={
-      <>
-        Qing Chen, Ying Chen, <b>Ruishi Zou</b>, Wei Shuai, Yi Guo, Jiazhe Wang,
-        Nan Cao
-      </>
-    }
-    venueType="underReview"
-    venueShort="TVCG (2023)"
-    venueFull="Under Review at IEEE Transactions on Visualization and Computer Graphics"
-    paperLink="https://arxiv.org/abs/2306.08304"
-    exploreLink="http://chart2vec.idvxlab.com/"
-    codeLink="https://github.com/idvxlab/chart2vec"
-  />,
-];
+interface ListComponentSpec {
+  itemList: JSX.Element[]
+}
 
-// get the keys out of colorProjection object
-const tagsData = Object.keys(colorProjection);
+const ListComponent: React.FC<ListComponentSpec> = (props) => {
+  const tagsData: string[] = [];
+  props.itemList.forEach((pub) => {
+    if (!tagsData.includes(pub.props.venueType)) {
+      tagsData.push(pub.props.venueType);
+    }
+  });
 
-const PubList: React.FC = () => {
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
 
   const [displayedPub, setDisplayedPub] =
-    useState<JSX.Element[]>(publicationList);
+    useState<JSX.Element[]>(props.itemList);
     
   const handleChange = (tag: string, checked: boolean) => {
     const nextSelectedTags = checked
@@ -54,10 +29,10 @@ const PubList: React.FC = () => {
     // console.log("You are interested in: ", nextSelectedTags);
     setSelectedTags(nextSelectedTags);
     if (nextSelectedTags.length === 0) {
-      setDisplayedPub(publicationList);
+      setDisplayedPub(props.itemList);
     } else {
       let filteredPub: JSX.Element[] = []
-      publicationList.forEach((pub) => {
+      props.itemList.forEach((pub) => {
         // console.log(pub.props.venueType)
         if (nextSelectedTags.includes(pub.props.venueType)) {
           filteredPub.push(pub);
@@ -67,7 +42,6 @@ const PubList: React.FC = () => {
       // console.log(filteredPub)
     }
   };
-
 
   return (
     <div>
@@ -89,4 +63,4 @@ const PubList: React.FC = () => {
   );
 };
 
-export default PubList;
+export default ListComponent;

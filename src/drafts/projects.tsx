@@ -36,8 +36,8 @@ const projList = [
   />,
 ];
 
-const projectDisplayList = () => {
+const ProjectDisplayList = () => {
   return <ListComponent itemList={projList} />;
 };
 
-export default projectDisplayList;
+export default ProjectDisplayList;

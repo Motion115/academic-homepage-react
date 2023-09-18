@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 
-import { Row, Col, Space, Image, Typography, Tag, Button } from "antd";
-import PubEntry from "./group_items/pub_entry_spec";
-import colorProjection from "./constanats/constants";
+import { Space, Typography, Tag } from "antd";
 const { Text } = Typography;
 
 interface ListComponentSpec {

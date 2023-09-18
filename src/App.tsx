@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, ConfigProvider, Layout, Space, theme } from "antd";
+import { ConfigProvider } from "antd";
 import WebsiteLayout from "./layout";
 
 const App: React.FC = () => (
@@ -7,7 +7,9 @@ const App: React.FC = () => (
     theme={{
       token: {
         colorPrimary: "#B3E5FC",
+        colorBgLayout: "#ffffff",
         borderRadius: 4,
+        fontSize: 16,
         fontFamily:
           "Maven Pro, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue'",
       },
@@ -15,6 +17,11 @@ const App: React.FC = () => (
         // Divider: {
         //   verticalMarginInline: 0,
         // },
+        Layout: {
+          headerBg: "#ffffff",
+          headerPadding: 0,
+          footerPadding: 0
+        },
       },
     }}
   >

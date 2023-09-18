@@ -26,12 +26,11 @@ interface PubEntrySpec {
     | "Journal"
     | "Workshop"
     | "arXiv"
-    | "underReview"
+    | "Pending"
     | "Other"
     | "Competition"
     | "Course"
-    | "Research"
-    | "Other";
+    | "Research";
   venueShort?: string;
   venueFull: string;
   affiliation?: string;

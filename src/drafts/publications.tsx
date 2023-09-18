@@ -28,7 +28,7 @@ const publicationList = [
         Nan Cao
       </>
     }
-    venueType="underReview"
+    venueType="Pending"
     venueShort="TVCG (2023)"
     venueFull="Under Review at IEEE Transactions on Visualization and Computer Graphics"
     paperLink="https://arxiv.org/abs/2306.08304"
@@ -37,8 +37,8 @@ const publicationList = [
   />,
 ];
 
-const publicationDisplayList = () => {
+const PublicationDisplayList = () => {
   return <ListComponent itemList={publicationList} />;
 };
 
-export default publicationDisplayList;
+export default PublicationDisplayList;

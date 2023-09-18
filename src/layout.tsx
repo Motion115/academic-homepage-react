@@ -4,6 +4,8 @@ import { Layout, Divider, Space, Typography } from "antd";
 import PublicationDisplayList from "./drafts/publications";
 import ProjectDisplayList from "./drafts/projects";
 import NewsDisplayList from "./drafts/updates";
+import PersonalInfo from "./modules/info";
+import HeaderMenu from "./modules/header";
 const { Paragraph, Text, Title } = Typography;
 const { Content, Header, Footer } = Layout;
 
@@ -11,9 +13,11 @@ const App: React.FC = () => (
   <Space direction="vertical" style={{ width: "100%" }}>
     <Layout style={{ width: "70%", padding: "1%", margin: "0 auto" }}>
       <Header>
-        <Title level={1}>Title</Title>
+        <HeaderMenu></HeaderMenu>
       </Header>
-      <Content>
+      <Content id="Home">
+        <br />
+        <PersonalInfo itemList={[]}></PersonalInfo>
         <Title level={4} id="Updates">
           Updates
         </Title>
@@ -32,7 +36,9 @@ const App: React.FC = () => (
         <Divider style={{ margin: "0 0 1% 0" }} />
         <ProjectDisplayList></ProjectDisplayList>
       </Content>
-      <Footer>Footer</Footer>
+      <Footer>
+        <Text>Copyright © 2022-2023. All Rights Reserved.</Text>
+      </Footer>
     </Layout>
   </Space>
 );

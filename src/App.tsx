@@ -20,7 +20,7 @@ const App: React.FC = () => (
         Layout: {
           headerBg: "#ffffff",
           headerPadding: 0,
-          footerPadding: 0
+          footerPadding: "50px 0px 50px 0px",
         },
       },
     }}

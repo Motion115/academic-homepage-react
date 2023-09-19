@@ -6,6 +6,7 @@ import ProjectDisplayList from "./drafts/projects";
 import NewsDisplayList from "./drafts/updates";
 import PersonalInfo from "./modules/info";
 import HeaderMenu from "./modules/header";
+import HeaderAnchor from "./modules/anchor";
 const { Paragraph, Text, Title } = Typography;
 const { Content, Header, Footer } = Layout;
 
@@ -13,7 +14,8 @@ const App: React.FC = () => (
   <Space direction="vertical" style={{ width: "100%" }}>
     <Layout style={{ width: "70%", padding: "1%", margin: "0 auto" }}>
       <Header>
-        <HeaderMenu></HeaderMenu>
+        {/* <HeaderMenu></HeaderMenu> */}
+        <HeaderAnchor></HeaderAnchor>
       </Header>
       <Content id="Home">
         <br />

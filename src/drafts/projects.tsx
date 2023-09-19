@@ -16,6 +16,7 @@ const projList = [
     authors={<>Independent Work</>}
     venueType="Course"
     venueFull="Multimedia Course Project (2023.3 - 2023.6)"
+    paperLink="https://drive.google.com/file/d/1CYStKrj8HM1veDg_hFkM0_1UsXBbYoXS/view?usp=drive_link"
     codeLink="https://github.com/Motion115/UI2Vec"
     affiliation="Tongji University"
   />,

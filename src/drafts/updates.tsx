@@ -56,7 +56,7 @@ const updatesList = [
 ];
 
 const NewsDisplayList = () => {
-  return <TimedListComponent itemList={updatesList} />;
+  return <TimedListComponent itemList={updatesList} displayLength={2}/>;
 };
 
 export default NewsDisplayList;

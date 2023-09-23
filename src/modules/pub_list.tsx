@@ -41,9 +41,9 @@ const ListComponent: React.FC<ListComponentSpec> = (props) => {
     }
   };
 
-  return (
-    <div>
-      <Space direction="vertical">
+  const isShowSelector = () => {
+    if (tagsData.length > 1) {
+      return (
         <Space size={[0, 8]} wrap>
           {tagsData.map((tag) => (
             <Tag.CheckableTag
@@ -55,6 +55,15 @@ const ListComponent: React.FC<ListComponentSpec> = (props) => {
             </Tag.CheckableTag>
           ))}
         </Space>
+      );
+    }
+  }
+
+  return (
+    <div>
+      <Space direction="vertical">
+        {isShowSelector()}
+        
         {displayedPub}
       </Space>
     </div>

@@ -5,13 +5,13 @@ const HeaderAnchor: React.FC = () => (
   <>
     <div>
       <Anchor
-        direction="horizontal"
+      affix={false}
         style={{ background: "#ffffff" }}
         items={[
           {
-            key: "Home",
-            href: "#Home",
-            title: <div style={{ fontSize: "18px" }}>Home</div>,
+            key: "About",
+            href: "#About",
+            title: <div style={{ fontSize: "18px" }}>About</div>,
           },
           {
             key: "Updates",
@@ -27,17 +27,7 @@ const HeaderAnchor: React.FC = () => (
             key: "Projects",
             href: "#Projects",
             title: <div style={{ fontSize: "18px" }}>Projects</div>,
-          },
-          {
-            key: "Misc",
-            href: "https://motion115.github.io/static/misc.html",
-            title: <div style={{ fontSize: "18px" }}>Misc</div>,
-          },
-          {
-            key: "Contact",
-            href: "misc",
-            title: <div style={{ fontSize: "18px" }}>Test</div>,
-          },
+          }
         ]}
       />
     </div>

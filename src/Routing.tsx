@@ -1,12 +1,12 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import WebsiteLayout from "./pages/layout";
 import MiscInDom from "./pages/misc";
+import HomepageInDom from "./pages/home";
 
 export default function Routing() {
   return (
     <Routes>
-      <Route path={"/"} element={WebsiteLayout} />
+      <Route path={"/"} element={HomepageInDom} />
       <Route path={"/misc"} element={MiscInDom} />
     </Routes>
   );

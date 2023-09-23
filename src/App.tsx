@@ -43,6 +43,16 @@ const App: React.FC = () => (
         <Footer>
           <Text>Last updated: September 2023. All Rights Reserved.</Text>
           <br />
+          {/* <Text>
+            Theme by{" "}
+            <a
+              href="https://github.com/Motion115/academic-homepage-react"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              Motion115.
+            </a>
+          </Text> */}
           <Text>
             If you like{" "}
             <a

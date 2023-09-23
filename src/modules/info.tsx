@@ -3,15 +3,30 @@ import {
   MailOutlined,
   GithubOutlined,
   LinkedinOutlined,
+  WeiboOutlined,
+  TwitterOutlined
 } from "@ant-design/icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
+import { faGraduationCap, faLocationDot} from "@fortawesome/free-solid-svg-icons";
+import { faOrcid } from "@fortawesome/free-brands-svg-icons";
 import { Space, Typography, Image, Divider, Layout } from "antd";
-import Selfie from "../assets/selfie.jpg";
+import LinkIcon from "./group_items/link_icon";
+
 const { Text, Paragraph, Title } = Typography;
 
 interface InfoSpec {
-  itemList: JSX.Element[];
+  portrait: string;
+  name: string;
+  affiliation: string;
+  personalStatement: JSX.Element;
+  googleScholar?: string;
+  github?: string;
+  linkedin?: string;
+  email?: string;
+  twitter?: string;
+  weibo?: string;
+  orcid?: string;
+  location?: string;
 }
 
 const PersonalInfo: React.FC<InfoSpec> = (props) => {
@@ -41,74 +56,63 @@ const PersonalInfo: React.FC<InfoSpec> = (props) => {
             style={{
               borderRadius: "50%",
             }}
-            src={Selfie}
+            src={props.portrait}
             width={picWidthSpec}
             preview={false}
           ></Image>
         </div>
         <div style={{ textAlign: "center" }}>
           <Text style={{ fontSize: "28px" }} strong={true}>
-            Ruishi Zou
+            {props.name}
           </Text>
           <br />
-          <Text style={{ fontSize: "18px" }}>Tongji University</Text>
+          <Text style={{ fontSize: "18px" }}>{props.affiliation}</Text>
+          <br />
+          <Text>
+            {props.location ? (
+              <>
+                <FontAwesomeIcon icon={faLocationDot} /> {props.location}
+              </>
+            ) : null}
+          </Text>
         </div>
         <div style={{ fontSize: "20px", textAlign: "center" }}>
-          <a
-            href="https://scholar.google.com/citations?user=RPQrY5AAAAAJ"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <FontAwesomeIcon icon={faGraduationCap} />
-          </a>
           <Divider type="vertical"></Divider>
-          <a
-            href="https://github.com/Motion115"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <GithubOutlined />
-          </a>
-          <Divider type="vertical"></Divider>
-          <a
-            href="https://www.linkedin.com/in/motion115"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <LinkedinOutlined />
-          </a>
-          <Divider type="vertical"></Divider>
-          <a
-            href="mailto:Motion115@outlook.com"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <MailOutlined />
-          </a>
+          <LinkIcon
+            icon={<FontAwesomeIcon icon={faGraduationCap} />}
+            link={props.googleScholar ? props.googleScholar : ""}
+          />
+          <LinkIcon
+            icon={<FontAwesomeIcon icon={faOrcid} />}
+            link={props.orcid ? props.orcid : ""}
+          />
+          <LinkIcon
+            icon={<GithubOutlined />}
+            link={props.github ? props.github : ""}
+          />
+          <LinkIcon
+            icon={<LinkedinOutlined />}
+            link={props.linkedin ? props.linkedin : ""}
+          />
+          <LinkIcon
+            icon={<MailOutlined />}
+            link={props.email ? props.email : ""}
+          />
+          <LinkIcon
+            icon={<TwitterOutlined />}
+            link={props.twitter ? props.twitter : ""}
+          />
+          <LinkIcon
+            icon={<WeiboOutlined />}
+            link={props.weibo ? props.weibo : ""}
+          />
         </div>
 
         <div style={{ width: "60%", margin: "0 auto" }}>
           <Divider></Divider>
         </div>
 
-        <Paragraph>
-          I am currently a senior student pursuing a bachelor's degree at Tongji
-          University. My research interests primarily lie in the technical side
-          of human-computer interaction, focusing on incorporating AI
-          technologies into human-centered intelligent systems to extend
-          people's abilities. Drawing insights from NLP, CV, and the Web, I plan
-          to build, analyze, and evaluate human-centered assistive or
-          collaborative systems, providing new perspectives into the technical
-          fields and democratizing AI to be more predictable and useable for
-          everyone.
-        </Paragraph>
-        <Paragraph>
-          Previously, I have participated in several HCI research projects, with
-          topics ranging from Visualization, User Interface, and
-          Accessibility. Looking forward, I hope to become an HCI researcher. I
-          am seeking a Ph.D. position in HCI, starting in Fall 2024. If you are
-          interested in me, feel free to drop me an Email!
-        </Paragraph>
+        {props.personalStatement}
       </Space>
     </div>
   );

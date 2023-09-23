@@ -34,8 +34,29 @@ const App: React.FC = () => (
       },
     }}
   >
-    <Routing></Routing>
-    {/* <WebsiteLayout></WebsiteLayout> */}
+    <Space direction="vertical" style={{ width: "100%" }}>
+      <Layout style={{ width: "70%", padding: "1%", margin: "0 auto" }}>
+        <Header>
+          <HeaderMenu></HeaderMenu>
+        </Header>
+        <Routing></Routing>
+        <Footer>
+          <Text>Last updated: September 2023. All Rights Reserved.</Text>
+          <br />
+          <Text>
+            If you like{" "}
+            <a
+              href="https://github.com/Motion115/academic-homepage-react"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              my page's design
+            </a>
+            , feel free to try it yourself!
+          </Text>
+        </Footer>
+      </Layout>
+    </Space>
   </ConfigProvider>
 );
 

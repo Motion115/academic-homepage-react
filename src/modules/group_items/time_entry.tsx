@@ -1,40 +1,55 @@
 import React from "react";
-import { useState } from "react";
-import {
-  FilePdfOutlined,
-  SearchOutlined,
-  GithubOutlined,
-  VideoCameraOutlined,
-  AudioOutlined,
-  TrophyOutlined,
-  InfoCircleOutlined,
-  ArrowDownOutlined,
-  ArrowRightOutlined,
-} from "@ant-design/icons";
-
-import { Row, Col, Space, Typography, Tag, Button, Divider } from "antd";
-import LinkTag from "./link_tag";
-import colorProjection from "../constanats/constants";
+import { Row, Col, Typography } from "antd";
 import "../constanats/constants";
 const { Text } = Typography;
 
 interface TimeEntrySpec {
-  startTime: string;
+  startTime?: string;
   endTime?: string;
   content: JSX.Element;
+  annotation?: JSX.Element;
 }
 
 const TimeEntry: React.FC<TimeEntrySpec> = (props: TimeEntrySpec) => {
+  const conditionalRender = () => {
+    if (props.startTime && props.endTime) {
+      return {
+        fc: 18,
+        lc: 6,
+      }
+    }
+    else if (props.startTime) {
+      return {
+        fc: 20,
+        lc: 4,
+      }
+    }
+    else {
+      return {
+        fc: 24,
+        lc: 0,
+      }
+    }
+  }
+
+  let columnWidthSetting = conditionalRender();
+
   return (
     <div>
       <Row gutter={{ xs: 4, sm: 8, md: 16, lg: 16 }}>
-        <Col span={18}>
+        <Col span={columnWidthSetting.fc}>
           <Text>{props.content}</Text>
         </Col>
-        <Col span={6} style={{ textAlign: "right" }}>
+        <Col span={columnWidthSetting.lc} style={{ textAlign: "right" }}>
           <Text>
-            {props.startTime} {props.endTime ? <>- {props.endTime}</> : null}
+            {props.startTime ? props.startTime : null}{" "}
+            {props.endTime ? <>- {props.endTime}</> : null}
           </Text>
+        </Col>
+      </Row>
+      <Row>
+        <Col span={24} style={{ paddingLeft: "2.5%" }}>
+          {props.annotation ? props.annotation : null}
         </Col>
       </Row>
     </div>

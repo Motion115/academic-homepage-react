@@ -5,12 +5,11 @@ const { Text } = Typography;
 
 interface ListComponentSpec {
   itemList: JSX.Element[];
+  displayLength: number;
 }
 
-const setDisplayLength = 1
-
 const TimedList: React.FC<ListComponentSpec> = (props) => {
-  let displayedLength = setDisplayLength;
+  let displayedLength = props.displayLength;
   let expandableTextDisp = "show";
   if (props.itemList.length < displayedLength) {
     expandableTextDisp = "redundant";

@@ -92,17 +92,22 @@ const PersonalInfo: React.FC<InfoSpec> = (props) => {
         </div>
 
         <Paragraph>
-          I am a senior student pursuing a bachelor's degree from Tongji
-          University. My research interests primarily lie in the
-          interdisciplinary human-computer interaction (HCI) field, particularly
-          on the technical side of HCI. Previously, I have participated in
-          several HCI research projects, with topics ranging from Visualization,
-          User Interface, and Accessibility.
+          I am currently a senior student pursuing a bachelor's degree at Tongji
+          University. My research interests primarily lie in the technical side
+          of human-computer interaction, focusing on incorporating AI
+          technologies into human-centered intelligent systems to extend
+          people's abilities. Drawing insights from NLP, CV, and the Web, I plan
+          to build, analyze, and evaluate human-centered assistive or
+          collaborative systems, providing new perspectives into the technical
+          fields and democratizing AI to be more predictable and useable for
+          everyone.
         </Paragraph>
         <Paragraph>
-          Looking forward, I hope to become a true HCI researcher. I am seeking
-          a Ph.D. position in HCI, starting in Fall 2024. If you are interested
-          in me, feel free to drop me an Email!
+          Previously, I have participated in several HCI research projects, with
+          topics ranging from Visualization, User Interface, and
+          Accessibility. Looking forward, I hope to become an HCI researcher. I
+          am seeking a Ph.D. position in HCI, starting in Fall 2024. If you are
+          interested in me, feel free to drop me an Email!
         </Paragraph>
       </Space>
     </div>

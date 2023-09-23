@@ -1,6 +1,6 @@
 import { Typography } from "antd";
 import TimeEntry from "../modules/group_items/time_entry";
-import TimedListComponent from "../modules/timed_list";
+import TimedPubList from "../modules/timed_list";
 const { Title, Paragraph, Text, Link } = Typography;
 
 const updatesList = [
@@ -56,7 +56,7 @@ const updatesList = [
 ];
 
 const NewsDisplayList = () => {
-  return <TimedListComponent itemList={updatesList} displayLength={2}/>;
+  return <TimedPubList itemList={updatesList} displayLength={2}/>;
 };
 
 export default NewsDisplayList;

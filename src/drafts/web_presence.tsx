@@ -1,6 +1,6 @@
 import { Typography } from "antd";
 import TimeEntry from "../modules/group_items/time_entry";
-import TimedListComponent from "../modules/timed_list";
+import TimedPubList from "../modules/timed_list";
 import { ZhihuOutlined } from "@ant-design/icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBilibili } from "@fortawesome/free-brands-svg-icons";
@@ -45,7 +45,7 @@ const webList = [
 ];
 
 const PrecenseOnWeb = () => {
-  return <TimedListComponent itemList={webList} displayLength={10} />;
+  return <TimedPubList itemList={webList} displayLength={10} />;
 };
 
 export default PrecenseOnWeb;

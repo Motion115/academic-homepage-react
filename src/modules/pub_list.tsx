@@ -3,11 +3,11 @@ import React, { useState } from "react";
 import { Space, Typography, Tag } from "antd";
 const { Text } = Typography;
 
-interface ListComponentSpec {
+interface PubListSpec {
   itemList: JSX.Element[]
 }
 
-const ListComponent: React.FC<ListComponentSpec> = (props) => {
+const PubList: React.FC<PubListSpec> = (props) => {
   const tagsData: string[] = [];
   props.itemList.forEach((pub) => {
     if (!tagsData.includes(pub.props.venueType)) {
@@ -70,4 +70,4 @@ const ListComponent: React.FC<ListComponentSpec> = (props) => {
   );
 };
 
-export default ListComponent;
+export default PubList;

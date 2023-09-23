@@ -3,12 +3,12 @@ import { ArrowDownOutlined, ArrowUpOutlined } from "@ant-design/icons";
 import { Space, Typography, Button } from "antd";
 const { Text } = Typography;
 
-interface ListComponentSpec {
+interface TimedListSpec {
   itemList: JSX.Element[];
   displayLength: number;
 }
 
-const TimedList: React.FC<ListComponentSpec> = (props) => {
+const TimedList: React.FC<TimedListSpec> = (props) => {
   let displayedLength = props.displayLength;
   let expandableTextDisp = "show";
   if (props.itemList.length < displayedLength) {

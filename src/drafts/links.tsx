@@ -1,5 +1,5 @@
 import TimeEntry from "../modules/group_items/time_entry";
-import TimedListComponent from "../modules/timed_list";
+import TimedPubList from "../modules/timed_list";
 import { LinkOutlined } from "@ant-design/icons";
 
 const webLink = [
@@ -50,7 +50,7 @@ const webLink = [
 ];
 
 const WebLinks = () => {
-  return <TimedListComponent itemList={webLink} displayLength={10} />;
+  return <TimedPubList itemList={webLink} displayLength={10} />;
 };
 
 export default WebLinks;

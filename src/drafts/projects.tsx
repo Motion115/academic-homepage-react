@@ -1,6 +1,6 @@
 import { Typography } from "antd";
 import PubEntry from "../modules/group_items/pub_entry_spec";
-import ListComponent from "../modules/pub_list";
+import PubList from "../modules/pub_list";
 const { Title, Paragraph, Text, Link } = Typography;
 
 const projList = [
@@ -38,7 +38,7 @@ const projList = [
 ];
 
 const ProjectDisplayList = () => {
-  return <ListComponent itemList={projList} />;
+  return <PubList itemList={projList} />;
 };
 
 export default ProjectDisplayList;

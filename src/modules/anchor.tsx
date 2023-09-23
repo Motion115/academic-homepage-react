@@ -33,6 +33,11 @@ const HeaderAnchor: React.FC = () => (
             href: "https://motion115.github.io/static/misc.html",
             title: <div style={{ fontSize: "18px" }}>Misc</div>,
           },
+          {
+            key: "Contact",
+            href: "misc",
+            title: <div style={{ fontSize: "18px" }}>Test</div>,
+          },
         ]}
       />
     </div>

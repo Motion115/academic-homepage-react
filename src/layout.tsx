@@ -45,4 +45,10 @@ const App: React.FC = () => (
   </Space>
 );
 
-export default App;
+const AppInDom = (
+  <div>
+    <App />
+  </div>
+);
+
+export default AppInDom;

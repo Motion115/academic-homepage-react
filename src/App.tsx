@@ -1,5 +1,6 @@
 import React from "react";
 import { ConfigProvider } from "antd";
+import Routing from "./Routing";
 import WebsiteLayout from "./layout";
 
 const App: React.FC = () => (
@@ -25,7 +26,8 @@ const App: React.FC = () => (
       },
     }}
   >
-    <WebsiteLayout></WebsiteLayout>
+    <Routing></Routing>
+    {/* <WebsiteLayout></WebsiteLayout> */}
   </ConfigProvider>
 );
 

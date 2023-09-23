@@ -15,7 +15,7 @@ const publicationList = [
     }
     venueType="Conference"
     venueShort="UIST'23 EA"
-    venueFull="Proceedings of the 36th Annual ACM Symposium on User Interface Software and Technology"
+    venueFull="Adjunct Proceedings of the 36th Annual ACM Symposium on User Interface Software and Technology"
     paperLink=""
     exploreLink="https://motion115.github.io/iTutor"
     codeLink="https://github.com/Motion115/iTutor"

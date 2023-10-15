@@ -24,7 +24,7 @@ const projList = [
     paperTitle="Forest Orchestra – Interactive Conducting Game for Music Education"
     authors={<>Contributor</>}
     venueType="Competition"
-    venueFull="China Collegiate Computing Contest: HCI Innovation Competition 2022 (2022.9 - 2022.12)"
+    venueFull="China Collegiate Computing Contest - HCI Innovation Competition 2022 (2022.9 - 2022.12)"
     awardName="Award in Creativity (top 4%)"
     affiliation="Tongji University"
   />,
@@ -32,7 +32,7 @@ const projList = [
     paperTitle="Data-driven Approach on Identifying Systemic Financial Risk"
     authors={<>Contributor</>}
     venueType="Research"
-    venueFull="Student Innovation Training Program"
+    venueFull="Student Innovation Training Program (2022.5 - 2023.3)"
     affiliation="Tongji University"
   />,
 ];

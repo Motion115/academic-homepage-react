@@ -41,7 +41,7 @@ const App: React.FC = () => (
         </Header>
         <Routing></Routing>
         <Footer>
-          <Text>Last updated: September 2023. All Rights Reserved.</Text>
+          <Text>Last updated: October 2023. All Rights Reserved.</Text>
           <br />
           {/* <Text>
             Theme by{" "}
@@ -56,7 +56,7 @@ const App: React.FC = () => (
           <Text>
             If you like{" "}
             <a
-              href="https://github.com/Motion115/academic-homepage-react"
+              href="https://github.com/Motion115/minimal-academic-folio"
               target="_blank"
               rel="noreferrer noopener"
             >

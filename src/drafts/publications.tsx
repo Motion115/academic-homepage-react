@@ -16,9 +16,10 @@ const publicationList = [
     venueType="Conference"
     venueShort="UIST'23 EA"
     venueFull="Adjunct Proceedings of the 36th Annual ACM Symposium on User Interface Software and Technology"
-    paperLink=""
+    paperLink="https://doi.org/10.1145/3586182.3616663"
     exploreLink="https://motion115.github.io/iTutor"
     codeLink="https://github.com/Motion115/iTutor"
+    awardName="(iTutor's related project) Third Prize in China Collegiate Computing Contest - HCI Innovation Competition 2023 (top 3%)"
   />,
   <PubEntry
     paperTitle="Chart2Vec: A Universal Embedding of Context-Aware Visualizations"

@@ -95,16 +95,16 @@ const PersonalInfo: React.FC<InfoSpec> = (props) => {
             link={props.linkedin ? props.linkedin : ""}
           />
           <LinkIcon
-            icon={<MailOutlined />}
-            link={props.email ? props.email : ""}
-          />
-          <LinkIcon
             icon={<TwitterOutlined />}
             link={props.twitter ? props.twitter : ""}
           />
           <LinkIcon
             icon={<WeiboOutlined />}
             link={props.weibo ? props.weibo : ""}
+          />
+          <LinkIcon
+            icon={<MailOutlined />}
+            link={props.email ? props.email : ""}
           />
         </div>
 

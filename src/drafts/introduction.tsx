@@ -14,8 +14,9 @@ const PersonalIntrouction = () => {
       googleScholar="https://scholar.google.com/citations?user=RPQrY5AAAAAJ"
       github="https://github.com/Motion115"
       linkedin="https://www.linkedin.com/in/motion115"
-      email="mailto:Motion115@outlook.com"
+      email="mailto:ruishi.ray.zou@gmail.com"
       orcid="https://orcid.org/0009-0001-3798-6833"
+      twitter="https://twitter.com/_ray_zou"
       personalStatement={
         <>
           <Paragraph>

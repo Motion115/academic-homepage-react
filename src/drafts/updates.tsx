@@ -11,13 +11,21 @@ const updatesList = [
       <>
         I will be attending{" "}
         <a
-          href="https://programs.sigchi.org/uist/2023/program/content/127396"
+          href="https://uist.acm.org/2023/"
           target="blank"
           rel="noreferrer noopener"
         >
           UIST 23
         </a>{" "}
-        in person! Find me at Poster Session B! (San Francisco, CA, USA)
+        in person! Find me at{" "}
+        <a
+          href="https://programs.sigchi.org/uist/2023/program/content/127396"
+          target="blank"
+          rel="noreferrer noopener"
+        >
+          Poster Session B
+        </a>
+        ! (San Francisco, CA, USA)
       </>
     }
   />,
@@ -26,15 +34,23 @@ const updatesList = [
     endTime="Oct 22, 2023"
     content={
       <>
-        Entering{" "}
+        Received Third Price in{" "}
         <a
-          href="http://hci.oppo.com/"
+          href="https://mp.weixin.qq.com/s/SAuI2_mpkTafEXgbB3l2Dg"
           target="_blank"
           rel="noreferrer noopener"
         >
-          C4-HCI 2023
+          C4-HCI 2023 finals
         </a>{" "}
-        finals with project <b>老年人智能手机使用“引路人”</b>. (Hangzhou, China)
+        and project reported in{" "}
+        <a
+          href="https://see.tongji.edu.cn/info/1143/11931.htm"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          college news
+        </a>
+        . (Hangzhou, China)
       </>
     }
   />,
@@ -42,15 +58,15 @@ const updatesList = [
     startTime="Aug 26, 2023"
     content={
       <>
-        Meeting new friends at training session for{" "}
+        Met new friends at training session for{" "}
         <a
           href="http://hci.oppo.com/EventDynamics/info.aspx?itemid=74091"
           target="_blank"
           rel="noreferrer noopener"
         >
           C4-HCI 2023
-        </a>
-        ! (Shenzhen, China)
+        </a>{" "}
+        finalists. (Shenzhen, China)
       </>
     }
   />,

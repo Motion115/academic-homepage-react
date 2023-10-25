@@ -5,11 +5,19 @@ const { Title, Paragraph, Text, Link } = Typography;
 
 const projList = [
   <PubEntry
+    paperTitle="Predicting Book Categories Based on Book Metadata and Web Network Relationships"
+    authors={<>Project Leader</>}
+    venueType="Competition"
+    venueFull="CCF BDCI 2023 & Data Mining Course Project (2023.10 - Now)"
+    affiliation="Tongji University"
+    materialLink="https://www.datafountain.cn/competitions/982"
+  />,
+  <PubEntry
     paperTitle="Music Patterns and Music Models"
     authors={<>Contributor, Advised by Prof. Roger B. Dannenberg</>}
     venueType="Research"
-    venueFull="Internship Project (2023.4 - Now, Remote)"
-    affiliation="Carnegie Mellon University"
+    venueFull="Internship Project (2023.4 - 2023.10)"
+    affiliation="Carnegie Mellon University (Remote)"
   />,
   <PubEntry
     paperTitle="UI2Vec: A Multimodal Embedding Method for Robust UI Classification"

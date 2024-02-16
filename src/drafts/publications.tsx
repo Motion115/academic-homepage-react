@@ -6,6 +6,19 @@ const { Title, Paragraph, Text, Link } = Typography;
 
 const publicationList = [
   <PubEntry
+    paperTitle="More Samples or More Prompt Inputs? Exploring Effective In-Context Sampling for LLM Few-Shot Prompt Engineering"
+    authors={
+      <>
+        Bingsheng Yao, Guiming Chen, <b>Ruishi Zou</b>, Yuxuan Lu, Jiachen Li,
+        Shao Zhang, Sijia Liu, James Hendler, Dakuo Wang
+      </>
+    }
+    venueType="Pending"
+    venueShort="Conference"
+    venueFull="In Submission"
+    paperLink="https://arxiv.org/abs/2311.09782"
+  />,
+  <PubEntry
     paperTitle="iTutor: A Generative Tutorial System for Teaching the Elders to Use
           Smartphone Applications"
     authors={

@@ -7,10 +7,11 @@ const projList = [
   <PubEntry
     paperTitle="Predicting Book Categories Based on Book Metadata and Web Network Relationships"
     authors={<>Project Leader</>}
-    venueType="Competition"
-    venueFull="CCF BDCI 2023 & Data Mining Course Project (2023.10 - Now)"
+    venueType="Course"
+    venueFull="CCF BDCI 2023 & Data Mining Course Project (2023.10 - 2023.12)"
     affiliation="Tongji University"
     materialLink="https://www.datafountain.cn/competitions/982"
+    codeLink="https://github.com/Motion115/DF-book-class-prediction"
   />,
   <PubEntry
     paperTitle="Music Patterns and Music Models"

@@ -21,21 +21,30 @@ const PersonalIntrouction = () => {
         <>
           <Paragraph>
             I am currently a senior student pursuing a bachelor's degree at
-            Tongji University. My research interests primarily lie in the
-            technical side of human-computer interaction, focusing on
-            incorporating AI technologies into human-centered intelligent
-            systems to extend people's abilities. Drawing insights from NLP, CV,
-            and the Web, I plan to build, analyze, and evaluate human-centered
-            assistive or collaborative systems, providing new perspectives into
-            the technical fields and democratizing AI to be more predictable and
-            useable for everyone.
+            Tongji University. My research interests lie in technical
+            human-computer interaction (HCI). Specifically, I aspire to explore
+            the application of AI in human-computer systems and answer the
+            following two questions within two HCI fields:
+            <li>
+              <b>Visualization</b>: How can machine learning methods support the
+              authoring of visualizations, and what insights can we gain from
+              visualization systems to enhance our understanding of machine
+              learning models?
+            </li>
+            <li>
+              <b>Engineering Interactive Systems & Tools</b>: How can we
+              effectively incorporate AI advancements, such as Computer Vision
+              and Natural Language Processing, into interactive systems to
+              improve their adaptability and accessibility?
+            </li>
           </Paragraph>
           <Paragraph>
-            Previously, I have participated in several HCI research projects,
-            with topics ranging from Visualization, User Interface, and
-            Accessibility. Looking forward, I hope to become an HCI researcher.
-            I am seeking a Ph.D. position in HCI, starting in Fall 2024. If you
-            are interested in me, feel free to drop me an Email!
+            Previously, I have participated in several HCI research projects
+            related to my research interests, with topics ranging from
+            Visualization, User Interface, and Accessibility. Looking forward, I
+            hope to become an HCI researcher. I am seeking a Ph.D. position in
+            HCI, starting in Fall 2024.{" "}
+            <b>If you see me as a good fit, feel free to drop me an Email</b>!
           </Paragraph>
         </>
       }

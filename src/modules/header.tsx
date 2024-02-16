@@ -14,9 +14,9 @@ const HeaderMenu: React.FC = () => {
   const onClick: MenuProps["onClick"] = (e) => {
     // console.log("click ", e);
     setCurrent(e.key);
-    if (e.key === "CV") {
-      setIsModalOpen(true);
-    }
+    // if (e.key === "CV") {
+    //   setIsModalOpen(true);
+    // }
   };
 
   return (
@@ -29,6 +29,7 @@ const HeaderMenu: React.FC = () => {
           items={items}
         />
       </Affix>
+
       <Modal
         open={isModalOpen}
         footer={null}
@@ -36,7 +37,7 @@ const HeaderMenu: React.FC = () => {
         onCancel={handleCancel}
       >
         <Alert
-          message="I currently only send my CV upon request. Please contact via Email. "
+          message="I try to maintain my webpage up-to-date, feel free to explore it! It is essentially the same as my CV. If you need my CV for some reason, please contact me via Email. "
           type="error"
           showIcon
         />

@@ -5,11 +5,19 @@ const { Title, Paragraph, Text, Link } = Typography;
 
 const updatesList = [
   <TimeEntry
+    startTime="Nov 15, 2023"
+    content={
+      <>
+        One working paper about <b>In-Context Sampling</b> released on arXiv!
+      </>
+    }
+  />,
+  <TimeEntry
     startTime="Oct 29, 2023"
     endTime="Nov 1, 2023"
     content={
       <>
-        I will be attending{" "}
+        Attended{" "}
         <a
           href="https://uist.acm.org/2023/"
           target="blank"
@@ -17,7 +25,7 @@ const updatesList = [
         >
           UIST 23
         </a>{" "}
-        in person! Find me at{" "}
+        in person and reported our work at{" "}
         <a
           href="https://programs.sigchi.org/uist/2023/program/content/127396"
           target="blank"
@@ -25,7 +33,7 @@ const updatesList = [
         >
           Poster Session B
         </a>
-        ! (San Francisco, CA, USA)
+        . (San Francisco, CA, USA)
       </>
     }
   />,
@@ -41,14 +49,6 @@ const updatesList = [
           rel="noreferrer noopener"
         >
           C4-HCI 2023 finals
-        </a>{" "}
-        and project reported in{" "}
-        <a
-          href="https://see.tongji.edu.cn/info/1143/11931.htm"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          college news
         </a>
         . (Hangzhou, China)
       </>
@@ -83,7 +83,7 @@ const updatesList = [
     startTime="June 16, 2023"
     content={
       <>
-        One paper (<b>Chart2Vec</b>) released on arXiv!
+        One paper <b>Chart2Vec</b> released on arXiv!
       </>
     }
   />,

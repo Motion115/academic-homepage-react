@@ -1,13 +1,36 @@
 import { Typography } from "antd";
 import TimeEntry from "../modules/group_items/time_entry";
 import TimedPubList from "../modules/timed_list";
-import { ZhihuOutlined } from "@ant-design/icons";
+import { ZhihuOutlined, LinkOutlined } from "@ant-design/icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBilibili } from "@fortawesome/free-brands-svg-icons";
 import { faBook } from "@fortawesome/free-solid-svg-icons";
 const { Title, Paragraph, Text, Link } = Typography;
 
 const webList = [
+  <TimeEntry
+    content={
+      <a
+        href="https://see.tongji.edu.cn/info/1143/11974.htm"
+        target="_blank"
+        rel="noreferrer noopener"
+      >
+        <LinkOutlined /> 我院本科生参加ACM UIST 2023国际学术会议 (11/07/2023)
+      </a>
+    }
+  />,
+  <TimeEntry
+    content={
+      <a
+        href="https://see.tongji.edu.cn/info/1143/11931.htm"
+        target="_blank"
+        rel="noreferrer noopener"
+      >
+        <LinkOutlined />{" "}
+        我院本科生在第二届中国高校计算机大赛智能交互创新赛中获佳绩 (10/25/2023)
+      </a>
+    }
+  />,
   <TimeEntry
     content={
       <a

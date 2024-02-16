@@ -27,7 +27,7 @@ const items: MenuProps["items"] = [
     ],
   },
   {
-    label: "CV",
+    label: <a href={baseServerAddress + "/CV"}>CV</a>,
     key: "CV",
   },
   {
